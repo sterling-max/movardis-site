@@ -1181,14 +1181,25 @@ section {
 
     /* 1 column on mobile */
     .about-values,
-    .key-features-grid {
-        grid-template-columns: 1fr;
+    .key-features-grid,
+    .characteristics-list,
+    .features-grid {
+        grid-template-columns: 1fr !important;
+        /* Force single column to prevent cutoff */
+    }
+
+    /* Center Product Pricing Button */
+    .product-pricing .btn {
+        margin: 0 auto;
+        display: inline-flex;
     }
 
     /* Mobile Hero Layout Fixes */
     .hero-section {
         padding-top: 140px;
-        /* Increased to prevent header overlap (was 60px/80px) */
+        /* Increased to prevent header overlap */
+        padding-bottom: 80px;
+        /* Added space at bottom so button doesn't touch edge */
         position: relative;
         /* Using hero image as background for mobile */
     }
