@@ -110,7 +110,7 @@ const translations = {
         'footer.legal': 'Legal',
         'footer.privacy': 'Privacy Policy',
         'footer.terms': 'Terms of Service',
-        'footer.copyright': '© 2024 Movardis. Partita IVA: [placeholder]',
+        'footer.copyright': '© 2025 Movardis. Partita IVA: [placeholder]',
 
         // Zap Studio Product Page
         'zapstudio.hero.title': 'Zap Studio',
@@ -262,7 +262,7 @@ const translations = {
         'footer.legal': 'Legale',
         'footer.privacy': 'Privacy Policy',
         'footer.terms': 'Termini di Servizio',
-        'footer.copyright': '© 2024 Movardis. Partita IVA: [placeholder]',
+        'footer.copyright': '© 2025 Movardis. Partita IVA: [placeholder]',
 
         // Zap Studio Product Page
         'zapstudio.hero.title': 'Zap Studio',
@@ -411,7 +411,7 @@ const translations = {
         'footer.legal': 'Legal',
         'footer.privacy': 'Política de Privacidad',
         'footer.terms': 'Términos de Servicio',
-        'footer.copyright': '© 2024 Movardis. Partita IVA: [placeholder]',
+        'footer.copyright': '© 2025 Movardis. Partita IVA: [placeholder]',
 
         // Zap Studio Product Page
         'zapstudio.hero.title': 'Zap Studio',
@@ -563,7 +563,7 @@ const translations = {
         'footer.legal': 'Légal',
         'footer.privacy': 'Politique de Confidentialité',
         'footer.terms': 'Conditions d\'Utilisation',
-        'footer.copyright': '© 2024 Movardis. Partita IVA: [placeholder]',
+        'footer.copyright': '© 2025 Movardis. Partita IVA: [placeholder]',
 
         // Zap Studio Product Page
         'zapstudio.hero.title': 'Zap Studio',

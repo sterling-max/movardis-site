@@ -1040,20 +1040,34 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: 0.25rem;
+    /* Tighter gap matching header style */
+}
+
+.footer-brand-text {
+    font-size: 1.5rem;
+    /* Slightly larger than header */
+    font-weight: 700;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .footer-logo {
-    width: 60px;
-    /* Adjusted size for main logo */
+    width: 48px;
+    /* Adjusted size */
     height: auto;
-    /* Removed filter as we are using a specific mono png now */
+    filter: brightness(0) invert(1);
+    /* Make logo all white */
     opacity: 0.8;
-    transition: opacity var(--transition-fast);
+    transition: all var(--transition-fast);
 }
 
 .footer-logo:hover {
     opacity: 1;
+    transform: scale(1.05);
+    /* Subtle pop */
 }
 
 .footer-links-row {

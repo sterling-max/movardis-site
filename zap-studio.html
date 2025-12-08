@@ -34,7 +34,7 @@
 
         .download-options {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: var(--spacing-lg);
             margin-top: var(--spacing-xl);
         }
@@ -45,6 +45,20 @@
             border-radius: var(--radius-xl);
             box-shadow: var(--shadow-lg);
             text-align: center;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .download-options {
+                gap: var(--spacing-md);
+                grid-template-columns: 1fr;
+                /* Force single column on mobile */
+            }
+
+            .download-card {
+                padding: var(--spacing-md);
+                /* Reduced padding for mobile */
+            }
         }
 
         .download-card h3 {
@@ -454,8 +468,8 @@
         <div class="container">
             <div class="footer-content centered">
                 <div class="footer-brand centered">
-                    <img src="./assets/movardis-logo-mono.png" alt="Movardis Logo" class="footer-logo">
-                    <!-- Tagline removed -->
+                    <img src="./assets/logo.svg" alt="Movardis Logo" class="footer-logo">
+                    <span class="footer-brand-text">Movardis</span>
                 </div>
                 <div class="footer-links-row">
                     <a href="zap-studio.html">Zap Studio</a>
