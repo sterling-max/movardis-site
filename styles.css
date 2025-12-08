@@ -274,20 +274,21 @@ section {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem 0.75rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
     background: transparent;
-    border: 1px solid var(--neutral-light);
+    border: none;
     border-radius: var(--radius-sm);
     cursor: pointer;
     transition: all var(--transition-fast);
     font-family: var(--font-body);
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 1rem;
+    color: var(--neutral-dark);
 }
 
 .lang-icon-btn:hover {
-    border-color: var(--primary);
-    background: var(--primary-light);
+    color: var(--primary);
+    background-color: var(--primary-light);
 }
 
 .lang-icon {
@@ -296,7 +297,8 @@ section {
 }
 
 .current-lang {
-    font-weight: 600;
+    font-weight: 400;
+    /* Drop the bold */
 }
 
 .lang-dropdown {
