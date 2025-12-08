@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Zap Studio - AI-powered automation workspace. Download free, buy a license when ready.">
+    <meta name="keywords" content="automation, AI, workflow, Zap Studio, Movardis">
+    <meta name="author" content="Movardis">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .download-hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+
+        .download-hero h1 {
+            color: white;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .download-hero p {
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-lg);
+            opacity: 0.9;
+        }
+
+        .download-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+        }
+
+        .download-card {
+            background: white;
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+
+        .download-card h3 {
+            color: var(--neutral-dark);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .download-card .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: var(--spacing-md) 0;
+        }
+
+        .download-card .price.free {
+            color: var(--success);
+        }
+
+        .platform-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-md);
+        }
+
+        .platform-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md);
+            background: var(--neutral-light);
+            border: 2px solid var(--neutral-light);
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+        }
+
+        .platform-btn:hover {
+            border-color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .feature-comparison {
+            margin-top: var(--spacing-xl);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: var(--spacing-md);
+            text-align: left;
+            border-bottom: 1px solid var(--neutral-light);
+        }
+
+        .comparison-table th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .check-icon {
+            color: var(--success);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .check-icon i {
+            width: 20px;
+            height: 20px;
+            stroke-width: 3;
+        }
+
+        .os-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .os-header i {
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <div class="logo-wrapper">
+                    <img src="./assets/logo.svg" alt="Movardis Logo" class="nav-logo">
+                </div>
+                <span class="nav-brand-text">Movardis</span>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                <a href="index.html#about" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="index.html#products" class="nav-link" data-i18n="nav.products">Products</a>
+                <a href="index.html#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+
+                <div class="language-selector">
+                    <button class="lang-icon-btn" id="lang-icon-btn" aria-label="Select language">
+                        <i data-lucide="globe" class="lang-icon"></i>
+                        <span class="current-lang">EN</span>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-option active" data-lang="en">
+                            <span class="lang-flag">🇬🇧</span>
+                            <span>English</span>
+                        </button>
+                        <button class="lang-option" data-lang="it">
+                            <span class="lang-flag">🇮🇹</span>
+                            <span>Italiano</span>
+                        </button>
+                        <button class="lang-option" data-lang="es">
+                            <span class="lang-flag">🇪🇸</span>
+                            <span>Español</span>
+                        </button>
+                        <button class="lang-option" data-lang="fr">
+                            <span class="lang-flag">🇫🇷</span>
+                            <span>Français</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Download Hero -->
+        <section class="download-hero">
+            <div class="container">
+                <img src="./assets/zap-studio-logo.svg" alt="Zap Studio"
+                    style="width: 120px; height: 120px; margin: 0 auto var(--spacing-md);">
+                <h1 data-i18n="zapstudio.hero.title">Zap Studio</h1>
+                <p data-i18n="zapstudio.hero.subtitle">AI-Powered Automation Workspace. Download free, buy a license
+                    when you're ready.</p>
+            </div>
+        </section>
+
+        <!-- Download Options -->
+        <section style="padding: var(--spacing-xl) 0; background: var(--neutral-light);">
+            <div class="container">
+                <div class="download-options">
+                    <!-- Free Download -->
+                    <div class="download-card">
+                        <h3 data-i18n="zapstudio.free.title">Free Download</h3>
+                        <div class="price free" data-i18n="zapstudio.free.price">FREE</div>
+                        <p data-i18n="zapstudio.free.desc">Try all features with no time limit. Purchase a license when
+                            ready.</p>
+
+                        <div class="platform-buttons">
+                            <button class="platform-btn">
+                                <i data-lucide="monitor"></i>
+                                <span data-i18n="zapstudio.download.windows">Download for Windows</span>
+                            </button>
+                            <button class="platform-btn">
+                                <i data-lucide="command"></i>
+                                <span data-i18n="zapstudio.download.macos">Download for macOS</span>
+                            </button>
+                            <button class="platform-btn">
+                                <i data-lucide="terminal"></i>
+                                <span data-i18n="zapstudio.download.linux">Download for Linux</span>
+                            </button>
+                        </div>
+
+                        <p style="margin-top: var(--spacing-md); font-size: 0.875rem; color: var(--neutral-medium);"
+                            data-i18n="zapstudio.free.note">
+                            No credit card required. Full functionality.
+                        </p>
+                    </div>
+
+                    <!-- License Purchase -->
+                    <div class="download-card" style="border: 3px solid var(--primary);">
+                        <div style="background: var(--primary); color: white; padding: var(--spacing-xs); border-radius: var(--radius-sm); display: inline-block; margin-bottom: var(--spacing-sm);"
+                            data-i18n="zapstudio.license.badge">
+                            Recommended
+                        </div>
+                        <h3 data-i18n="zapstudio.license.title">Professional License</h3>
+                        <div class="price">€99</div>
+                        <p data-i18n="zapstudio.license.desc">One-time payment. Lifetime license. Optional updates.</p>
+
+                        <ul style="text-align: left; margin: var(--spacing-md) 0; list-style: none;">
+                            <li style="padding: var(--spacing-xs) 0; display: flex; align-items: center; gap: 0.5rem;">
+                                <span class="check-icon"><i data-lucide="check"></i></span> <span
+                                    data-i18n="zapstudio.license.feature1">Lifetime license</span>
+                            </li>
+                            <li style="padding: var(--spacing-xs) 0; display: flex; align-items: center; gap: 0.5rem;">
+                                <span class="check-icon"><i data-lucide="check"></i></span> <span
+                                    data-i18n="zapstudio.license.feature2">All features unlocked</span>
+                            </li>
+                            <li style="padding: var(--spacing-xs) 0; display: flex; align-items: center; gap: 0.5rem;">
+                                <span class="check-icon"><i data-lucide="check"></i></span> <span
+                                    data-i18n="zapstudio.license.feature3">Priority email support</span>
+                            </li>
+                            <li style="padding: var(--spacing-xs) 0; display: flex; align-items: center; gap: 0.5rem;">
+                                <span class="check-icon"><i data-lucide="check"></i></span> <span
+                                    data-i18n="zapstudio.license.feature4">Free updates for 1 year</span>
+                            </li>
+                            <li style="padding: var(--spacing-xs) 0; display: flex; align-items: center; gap: 0.5rem;">
+                                <span class="check-icon"><i data-lucide="check"></i></span> <span
+                                    data-i18n="zapstudio.license.feature5">30-day money-back guarantee</span>
+                            </li>
+                        </ul>
+
+                        <button class="btn btn-primary btn-large" style="width: 100%;"
+                            data-i18n="zapstudio.license.cta">
+                            Purchase License
+                        </button>
+
+                        <p style="margin-top: var(--spacing-sm); font-size: 0.875rem; color: var(--neutral-medium);"
+                            data-i18n="zapstudio.license.note">
+                            VAT handled via Merchant of Record
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Comparison -->
+        <section style="padding: var(--spacing-xl) 0;">
+            <div class="container">
+                <h2 class="section-title" data-i18n="zapstudio.comparison.title">Feature Comparison</h2>
+
+                <div class="feature-comparison">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="zapstudio.comparison.feature">Feature</th>
+                                <th data-i18n="zapstudio.comparison.free">Free Version</th>
+                                <th data-i18n="zapstudio.comparison.licensed">Licensed Version</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-i18n="zapstudio.comparison.row1">Automation Pipelines</td>
+                                <td><span class="check-icon"><i data-lucide="check"></i></span></td>
+                                <td><span class="check-icon"><i data-lucide="check"></i></span></td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="zapstudio.comparison.row2">Visual Workflow Builder</td>
+                                <td><span class="check-icon"><i data-lucide="check"></i></span></td>
+                                <td><span class="check-icon"><i data-lucide="check"></i></span></td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="zapstudio.comparison.row3">AI-Powered Suggestions</td>
+                                <td><span class="check-icon"><i data-lucide="check"></i></span></td>
+                                <td><span class="check-icon"><i data-lucide="check"></i></span></td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="zapstudio.comparison.row4">Local Processing (Privacy)</td>
+                                <td><span class="check-icon"><i data-lucide="check"></i></span></td>
+                                <td><span class="check-icon"><i data-lucide="check"></i></span></td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="zapstudio.comparison.row5">Priority Support</td>
+                                <td>—</td>
+                                <td><span class="check-icon"><i data-lucide="check"></i></span></td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="zapstudio.comparison.row6">Commercial Use</td>
+                                <td>—</td>
+                                <td><span class="check-icon"><i data-lucide="check"></i></span></td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="zapstudio.comparison.row7">Free Updates (1 year)</td>
+                                <td>—</td>
+                                <td><span class="check-icon"><i data-lucide="check"></i></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Requirements -->
+        <section style="padding: var(--spacing-xl) 0; background: var(--neutral-light);">
+            <div class="container">
+                <h2 class="section-title" data-i18n="zapstudio.requirements.title">System Requirements</h2>
+
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg); margin-top: var(--spacing-lg);">
+                    <div style="background: white; padding: var(--spacing-lg); border-radius: var(--radius-lg);">
+                        <div class="os-header">
+                            <i data-lucide="monitor"></i>
+                            <h3>Windows</h3>
+                        </div>
+                        <ul style="list-style: none; margin-top: var(--spacing-md);">
+                            <li>Windows 10/11 (64-bit)</li>
+                            <li>4GB RAM minimum</li>
+                            <li>500MB disk space</li>
+                        </ul>
+                    </div>
+                    <div style="background: white; padding: var(--spacing-lg); border-radius: var(--radius-lg);">
+                        <div class="os-header">
+                            <i data-lucide="command"></i>
+                            <h3>macOS</h3>
+                        </div>
+                        <ul style="list-style: none; margin-top: var(--spacing-md);">
+                            <li>macOS 11 Big Sur or later</li>
+                            <li>4GB RAM minimum</li>
+                            <li>500MB disk space</li>
+                        </ul>
+                    </div>
+                    <div style="background: white; padding: var(--spacing-lg); border-radius: var(--radius-lg);">
+                        <div class="os-header">
+                            <i data-lucide="terminal"></i>
+                            <h3>Linux</h3>
+                        </div>
+                        <ul style="list-style: none; margin-top: var(--spacing-md);">
+                            <li>Ubuntu 20.04+ / Fedora 34+</li>
+                            <li>4GB RAM minimum</li>
+                            <li>500MB disk space</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section style="padding: var(--spacing-xl) 0;">
+            <div class="container">
+                <h2 class="section-title" data-i18n="zapstudio.faq.title">Frequently Asked Questions</h2>
+
+                <div class="faq-list" style="max-width: 800px; margin: 0 auto;">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span data-i18n="zapstudio.faq.q1">Is the free version really free?</span>
+                            <svg class="toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-i18n="zapstudio.faq.a1">Yes! Download and use all features with no time limit.
+                                Purchase a license only when you're ready for commercial use or want priority support.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span data-i18n="zapstudio.faq.q2">What's the difference between free and licensed?</span>
+                            <svg class="toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-i18n="zapstudio.faq.a2">The free version has all features for personal use. The
+                                licensed version adds commercial use rights, priority support, and free updates.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span data-i18n="zapstudio.faq.q3">How does the AI work?</span>
+                            <svg class="toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-i18n="zapstudio.faq.a3">All AI processing happens locally on your machine. No data
+                                is sent to external servers, ensuring complete privacy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="./assets/logo.svg" alt="Movardis Logo" class="footer-logo">
+                    <p data-i18n="footer.tagline">Movardis — AI Innovation Studio</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.products">Products</h4>
+                        <a href="zap-studio.html">Zap Studio</a>
+                        <a href="index.html#products" data-i18n="footer.allproducts">All Products</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.company">Company</h4>
+                        <a href="index.html#about" data-i18n="footer.about">About</a>
+                        <a href="index.html#research" data-i18n="footer.research">Research</a>
+                        <a href="index.html#contact" data-i18n="footer.contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2024 Movardis. Partita IVA: [placeholder]</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

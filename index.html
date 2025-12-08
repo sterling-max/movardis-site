@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Movardis - Independent AI Research & Development Studio. Creating intelligent solutions that respect privacy and empower users.">
+    <meta name="keywords" content="AI, artificial intelligence, research, innovation, privacy, Movardis">
+    <meta name="author" content="Movardis">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <div class="logo-wrapper">
+                    <img src="./assets/logo.svg" alt="Movardis Logo" class="nav-logo" id="nav-logo">
+                </div>
+                <span class="nav-brand-text">Movardis</span>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link" data-i18n="nav.home">Home</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="#research" class="nav-link" data-i18n="nav.research">Research</a>
+                <a href="#products" class="nav-link" data-i18n="nav.products">Products</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+
+                <!-- Language Selector with Icon -->
+                <div class="language-selector">
+                    <button class="lang-icon-btn" id="lang-icon-btn" aria-label="Select language">
+                        <i data-lucide="globe" class="lang-icon"></i>
+                        <span class="current-lang">EN</span>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-option active" data-lang="en">
+                            <span class="lang-flag">🇬🇧</span>
+                            <span>English</span>
+                        </button>
+                        <button class="lang-option" data-lang="it">
+                            <span class="lang-flag">🇮🇹</span>
+                            <span>Italiano</span>
+                        </button>
+                        <button class="lang-option" data-lang="es">
+                            <span class="lang-flag">🇪🇸</span>
+                            <span>Español</span>
+                        </button>
+                        <button class="lang-option" data-lang="fr">
+                            <span class="lang-flag">🇫🇷</span>
+                            <span>Français</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" data-i18n="hero.title">AI Innovation for Tomorrow's Challenges</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">STERLIAN is an independent AI research and
+                        development studio, creating intelligent solutions that respect privacy and empower users.</p>
+                    <div class="hero-cta">
+                        <a href="#products" class="btn btn-primary" data-i18n="hero.cta1">Explore Our Products</a>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta2">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-placeholder">
+                        <img src="./assets/hero-visual.png" alt="Movardis AI Intelligence" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about.title">About STERLIAN</h2>
+                <div class="about-content">
+                    <p class="about-text" data-i18n="about.text">STERLIAN is an independent AI research and development
+                        studio based in Italy. We specialize in creating intelligent, privacy-first solutions that
+                        combine cutting-edge artificial intelligence with ethical design principles. Our mission is to
+                        develop AI tools that empower users while respecting their privacy and autonomy.</p>
+                    <div class="about-values">
+                        <div class="value-card">
+                            <div class="value-icon"><i data-lucide="brain"></i></div>
+                            <h3 data-i18n="about.value1.title">AI Innovation</h3>
+                            <p data-i18n="about.value1.desc">Pushing boundaries in machine learning and intelligent
+                                automation</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon"><i data-lucide="shield"></i></div>
+                            <h3 data-i18n="about.value2.title">Privacy First</h3>
+                            <p data-i18n="about.value2.desc">Building solutions that respect user privacy and data
+                                sovereignty</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon"><i data-lucide="microscope"></i></div>
+                            <h3 data-i18n="about.value3.title">Research Driven</h3>
+                            <p data-i18n="about.value3.desc">Grounded in rigorous research and scientific methodology
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Areas Section -->
+        <section id="research" class="features-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="research.title">Research Areas</h2>
+                <p class="section-subtitle" data-i18n="research.subtitle">Our focus areas in AI research and development
+                </p>
+                <div class="key-features-grid">
+                    <div class="key-feature">
+                        <div class="key-feature-icon"><i data-lucide="bot"></i></div>
+                        <h3 data-i18n="research.area1.title">Machine Learning</h3>
+                        <p data-i18n="research.area1.desc">Advanced ML algorithms for intelligent automation</p>
+                    </div>
+                    <div class="key-feature">
+                        <div class="key-feature-icon"><i data-lucide="message-square"></i></div>
+                        <h3 data-i18n="research.area2.title">Natural Language</h3>
+                        <p data-i18n="research.area2.desc">NLP and language understanding systems</p>
+                    </div>
+                    <div class="key-feature">
+                        <div class="key-feature-icon"><i data-lucide="eye"></i></div>
+                        <h3 data-i18n="research.area3.title">Computer Vision</h3>
+                        <p data-i18n="research.area3.desc">Image and video analysis technologies</p>
+                    </div>
+                    <div class="key-feature">
+                        <div class="key-feature-icon"><i data-lucide="zap"></i></div>
+                        <h3 data-i18n="research.area4.title">Automation</h3>
+                        <p data-i18n="research.area4.desc">Intelligent workflow and process automation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="product-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="products.title">Our Products</h2>
+                <p class="section-subtitle" data-i18n="products.subtitle">AI-powered tools built with privacy and
+                    performance in mind</p>
+
+                <!-- Zap Studio Product Card (Collapsible) -->
+                <div class="product-card" id="product-card">
+                    <div class="product-header">
+                        <div class="product-logo-placeholder">
+                            <img src="./assets/zap-studio-logo.svg" alt="Zap Studio Logo" class="product-logo"
+                                id="product-logo">
+                        </div>
+                        <h2 class="product-name">Zap Studio</h2>
+                    </div>
+
+                    <div class="product-intro">
+                        <p class="product-intro-text" data-i18n="product.intro">AI-powered automation workspace — fast,
+                            intelligent, and designed for real‑world workflows.</p>
+                    </div>
+
+                    <button class="product-toggle-btn" id="product-toggle-btn">
+                        <span data-i18n="product.expand">Learn More</span>
+                        <svg class="toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+
+                    <div class="product-expanded" id="product-expanded">
+                        <!-- Image Gallery -->
+                        <div class="product-gallery">
+                            <div class="gallery-item">
+                                <div class="gallery-placeholder">Workflow Builder</div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="gallery-placeholder">AI Assistant</div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="gallery-placeholder">Analytics Dashboard</div>
+                            </div>
+                        </div>
+
+                        <!-- Characteristics -->
+                        <div class="product-characteristics">
+                            <h3 data-i18n="product.characteristics.title">Key Features</h3>
+                            <ul class="characteristics-list">
+                                <li data-i18n="product.characteristics.item1">AI-powered automation suggestions</li>
+                                <li data-i18n="product.characteristics.item2">Local processing for privacy</li>
+                                <li data-i18n="product.characteristics.item3">Visual workflow builder</li>
+                                <li data-i18n="product.characteristics.item4">Cross-platform compatibility</li>
+                                <li data-i18n="product.characteristics.item5">Enterprise-grade performance</li>
+                            </ul>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="product-features">
+                            <h3 data-i18n="product.features.title">What You Can Do</h3>
+                            <div class="features-grid">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i data-lucide="zap"></i></div>
+                                    <h4 data-i18n="product.features.feature1.title">Smart Automation</h4>
+                                    <p data-i18n="product.features.feature1.desc">Build intelligent workflows with AI
+                                        assistance</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i data-lucide="settings"></i></div>
+                                    <h4 data-i18n="product.features.feature2.title">Tool Integration</h4>
+                                    <p data-i18n="product.features.feature2.desc">Connect your favorite apps and
+                                        services</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i data-lucide="target"></i></div>
+                                    <h4 data-i18n="product.features.feature3.title">Precision Control</h4>
+                                    <p data-i18n="product.features.feature3.desc">Fine-tune every aspect of your
+                                        workflows</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i data-lucide="bar-chart"></i></div>
+                                    <h4 data-i18n="product.features.feature4.title">Analytics</h4>
+                                    <p data-i18n="product.features.feature4.desc">Track performance and optimize
+                                        processes</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i data-lucide="lock"></i></div>
+                                    <h4 data-i18n="product.features.feature5.title">Privacy Focused</h4>
+                                    <p data-i18n="product.features.feature5.desc">All processing happens locally on your
+                                        machine</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA -->
+                        <div class="product-pricing">
+                            <h3 data-i18n="product.cta.title">Get Started</h3>
+                            <p data-i18n="product.cta.desc">Download free, buy a license when you're ready.</p>
+                            <a href="zap-studio.html" class="btn btn-primary btn-large"
+                                data-i18n="product.cta.button">Download Zap Studio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section id="use-cases" class="use-cases-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="usecases.title">Who We Serve</h2>
+                <div class="use-cases-grid">
+                    <div class="use-case-card">
+                        <h3 data-i18n="usecases.researchers.title">Researchers</h3>
+                        <p data-i18n="usecases.researchers.desc">Advanced AI tools for academic and industrial research
+                        </p>
+                    </div>
+                    <div class="use-case-card">
+                        <h3 data-i18n="usecases.developers.title">Developers</h3>
+                        <p data-i18n="usecases.developers.desc">Powerful automation for software development workflows
+                        </p>
+                    </div>
+                    <div class="use-case-card">
+                        <h3 data-i18n="usecases.businesses.title">Businesses</h3>
+                        <p data-i18n="usecases.businesses.desc">Enterprise solutions with privacy and compliance
+                            built-in</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="testimonials.title">What People Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text" data-i18n="testimonials.quote1">"STERLIAN's approach to AI is
+                            refreshing — powerful yet respectful of privacy."</p>
+                        <div class="testimonial-author">— Research Director, Tech Institute</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text" data-i18n="testimonials.quote2">"Finally, AI tools that don't
+                            compromise on privacy or performance."</p>
+                        <div class="testimonial-author">— CTO, Software Company</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text" data-i18n="testimonials.quote3">"The innovation coming from STERLIAN
+                            is exactly what the industry needs."</p>
+                        <div class="testimonial-author">— Independent Developer</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">Interested in our research or products? We'd
+                    love to hear from you.</p>
+
+                <div class="contact-methods-container">
+                    <a href="mailto:contact@sterlian.com" class="contact-method-card">
+                        <div class="contact-icon-wrapper">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <span class="contact-label">Email Us</span>
+                        <span class="contact-value">contact@movardis.com</span>
+                    </a>
+
+                    <a href="https://wa.me/YOURNUMBER" target="_blank" class="contact-method-card">
+                        <div class="contact-icon-wrapper">
+                            <i data-lucide="message-circle"></i>
+                        </div>
+                        <span class="contact-label">WhatsApp</span>
+                        <span class="contact-value">Chat with us</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="./assets/logo.svg" alt="Movardis Logo" class="footer-logo" id="footer-logo">
+                    <p data-i18n="footer.tagline">Movardis — AI Innovation Studio</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.products">Products</h4>
+                        <a href="zap-studio.html">Zap Studio</a>
+                        <a href="#products" data-i18n="footer.allproducts">All Products</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.company">Company</h4>
+                        <a href="#about" data-i18n="footer.about">About</a>
+                        <a href="#research" data-i18n="footer.research">Research</a>
+                        <a href="#contact" data-i18n="footer.contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                        <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2024 STERLIAN. Partita IVA: [placeholder]</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- First Bar (Primary Color) - Thicker (Width 22 -> 28) -->
+    <path d="M5 95L38 5H60L27 95H5Z" fill="#0A3D62"/>
+    
+    <!-- Second Bar (Secondary Color) - Thicker (Width 22 -> 28) -->
+    <path d="M45 95L78 5H100L67 95H45Z" fill="#3C6382"/>
+</svg>
