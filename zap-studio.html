@@ -201,11 +201,11 @@
         <!-- Download Hero -->
         <section class="download-hero">
             <div class="container">
-                <img src="./assets/zap-studio-logo.svg" alt="Zap Studio"
+                <img src="./assets/products/zap/logo.svg" alt="Zap Studio"
                     style="width: 120px; height: 120px; margin: 0 auto var(--spacing-md);">
-                <h1 data-i18n="zapstudio.hero.title">Zap Studio</h1>
-                <p data-i18n="zapstudio.hero.subtitle">AI-Powered Automation Workspace. Download free, buy a license
-                    when you're ready.</p>
+                <h1 class="zap-brand-font" data-i18n="zapstudio.hero.title">Zap Studio</h1>
+                <p data-i18n="zapstudio.hero.subtitle">Local-First AI Video Generation Engine. Script, Narrate,
+                    Illustrate.</p>
             </div>
         </section>
 
@@ -215,10 +215,30 @@
                 <div class="download-options">
                     <!-- Free Download -->
                     <div class="download-card">
-                        <h3 data-i18n="zapstudio.free.title">Free Download</h3>
+                        <h3 data-i18n="zapstudio.free.title">Free Tier</h3>
                         <div class="price free" data-i18n="zapstudio.free.price">FREE</div>
-                        <p data-i18n="zapstudio.free.desc">Try all features with no time limit. Purchase a license when
-                            ready.</p>
+                        <p data-i18n="zapstudio.free.desc">Perfect for testing and personal projects.</p>
+
+                        <ul style="text-align: left; margin: var(--spacing-md) 0; list-style: none;">
+                            <li
+                                style="padding: var(--spacing-xs) 0; display: flex; align-items: center; gap: 0.5rem; color: var(--neutral-medium);">
+                                <span class="check-icon" style="color: var(--warning);"><i
+                                        data-lucide="alert-circle"></i></span>
+                                <span data-i18n="zapstudio.free.limit1">Single-channel audio only</span>
+                            </li>
+                            <li
+                                style="padding: var(--spacing-xs) 0; display: flex; align-items: center; gap: 0.5rem; color: var(--neutral-medium);">
+                                <span class="check-icon" style="color: var(--warning);"><i
+                                        data-lucide="alert-circle"></i></span>
+                                <span data-i18n="zapstudio.free.limit2">Limited character count</span>
+                            </li>
+                            <li
+                                style="padding: var(--spacing-xs) 0; display: flex; align-items: center; gap: 0.5rem; color: var(--neutral-medium);">
+                                <span class="check-icon" style="color: var(--warning);"><i
+                                        data-lucide="alert-circle"></i></span>
+                                <span data-i18n="zapstudio.free.limit3">No transitional effects</span>
+                            </li>
+                        </ul>
 
                         <div class="platform-buttons">
                             <button class="platform-btn">
@@ -234,11 +254,6 @@
                                 <span data-i18n="zapstudio.download.linux">Download for Linux</span>
                             </button>
                         </div>
-
-                        <p style="margin-top: var(--spacing-md); font-size: 0.875rem; color: var(--neutral-medium);"
-                            data-i18n="zapstudio.free.note">
-                            No credit card required. Full functionality.
-                        </p>
                     </div>
 
                     <!-- License Purchase -->
@@ -247,30 +262,30 @@
                             data-i18n="zapstudio.license.badge">
                             Recommended
                         </div>
-                        <h3 data-i18n="zapstudio.license.title">Professional License</h3>
-                        <div class="price">€99</div>
-                        <p data-i18n="zapstudio.license.desc">One-time payment. Lifetime license. Optional updates.</p>
+                        <h3 data-i18n="zapstudio.license.title">Full License</h3>
+                        <div class="price">€60</div>
+                        <p data-i18n="zapstudio.license.desc">Unlock the full potential of your content factory.</p>
 
                         <ul style="text-align: left; margin: var(--spacing-md) 0; list-style: none;">
                             <li style="padding: var(--spacing-xs) 0; display: flex; align-items: center; gap: 0.5rem;">
                                 <span class="check-icon"><i data-lucide="check"></i></span> <span
-                                    data-i18n="zapstudio.license.feature1">Lifetime license</span>
+                                    data-i18n="zapstudio.license.feature1">Multi-channel audio support</span>
                             </li>
                             <li style="padding: var(--spacing-xs) 0; display: flex; align-items: center; gap: 0.5rem;">
                                 <span class="check-icon"><i data-lucide="check"></i></span> <span
-                                    data-i18n="zapstudio.license.feature2">All features unlocked</span>
+                                    data-i18n="zapstudio.license.feature2">Unlimited characters</span>
                             </li>
                             <li style="padding: var(--spacing-xs) 0; display: flex; align-items: center; gap: 0.5rem;">
                                 <span class="check-icon"><i data-lucide="check"></i></span> <span
-                                    data-i18n="zapstudio.license.feature3">Priority email support</span>
+                                    data-i18n="zapstudio.license.feature3">Advanced transitional effects</span>
                             </li>
                             <li style="padding: var(--spacing-xs) 0; display: flex; align-items: center; gap: 0.5rem;">
                                 <span class="check-icon"><i data-lucide="check"></i></span> <span
-                                    data-i18n="zapstudio.license.feature4">Free updates for 1 year</span>
+                                    data-i18n="zapstudio.license.feature4">Commercial usage rights</span>
                             </li>
                             <li style="padding: var(--spacing-xs) 0; display: flex; align-items: center; gap: 0.5rem;">
                                 <span class="check-icon"><i data-lucide="check"></i></span> <span
-                                    data-i18n="zapstudio.license.feature5">30-day money-back guarantee</span>
+                                    data-i18n="zapstudio.license.feature5">Priority updates & support</span>
                             </li>
                         </ul>
 
@@ -278,11 +293,6 @@
                             data-i18n="zapstudio.license.cta">
                             Purchase License
                         </button>
-
-                        <p style="margin-top: var(--spacing-sm); font-size: 0.875rem; color: var(--neutral-medium);"
-                            data-i18n="zapstudio.license.note">
-                            VAT handled via Merchant of Record
-                        </p>
                     </div>
                 </div>
             </div>
