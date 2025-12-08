@@ -1186,12 +1186,27 @@ section {
     .features-grid {
         grid-template-columns: 1fr !important;
         /* Force single column to prevent cutoff */
+        align-items: center;
     }
 
-    /* Center Product Pricing Button */
+    /* Center Product Pricing Button and Reduce Padding */
+    .product-pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: var(--spacing-md) !important;
+        /* Reduce padding to give more width */
+    }
+
     .product-pricing .btn {
-        margin: 0 auto;
+        margin: 0;
+        /* Flex align-items handles centering */
         display: inline-flex;
+        width: auto !important;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     /* Mobile Hero Layout Fixes */
