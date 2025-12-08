@@ -655,16 +655,24 @@ section {
 
 .product-header {
     display: flex;
+    flex-direction: column;
+    /* Stack logo above title */
     align-items: center;
-    gap: var(--spacing-md);
+    /* Center horizontally */
+    justify-content: center;
+    gap: var(--spacing-sm);
     margin-bottom: var(--spacing-md);
+    text-align: center;
 }
 
 .product-logo-placeholder {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    border-radius: var(--radius-lg);
+    width: 64px;
+    /* Adjust size if needed */
+    height: 64px;
+    background: transparent;
+    /* Remove background */
+    border-radius: 0;
+    /* Remove border radius */
     display: flex;
     align-items: center;
     justify-content: center;
