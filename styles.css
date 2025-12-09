@@ -1002,8 +1002,11 @@ section {
     transition: all var(--transition-normal);
 }
 
-.contact-method-card:hover .contact-icon-wrapper i {
+.contact-method-card:hover .contact-icon-wrapper svg,
+.contact-method-card:hover .contact-icon-wrapper .lucide {
     color: white;
+    stroke: white;
+    /* Force stroke color change for Lucide icons */
 }
 
 .contact-label {
@@ -1066,22 +1069,6 @@ section {
 
 .footer-logo:hover {
     opacity: 1;
-    transform: scale(1.05);
-    /* Subtle pop */
-}
-
-.footer-links-row {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.footer-links-row a {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.9rem;
-    transition: color var(--transition-fast);
 }
 
 .footer-links-row a:hover {

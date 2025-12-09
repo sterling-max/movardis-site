@@ -67,29 +67,6 @@ const translations = {
         'product.features.feature4.desc': 'Intervene on every generated frame or phrase',
         'product.features.feature5.title': 'Privacy & Local',
         'product.features.feature5.desc': 'Your data and scripts stay on your PC',
-        'product.cta.title': 'Get Started',
-        'product.cta.desc': 'Download free, buy a license when you\'re ready.',
-        'product.cta.button': 'Download Zap Studio',
-
-        // Use Cases Section
-        'usecases.title': 'Who We Serve',
-        'usecases.researchers.title': 'Researchers',
-        'usecases.researchers.desc': 'Advanced AI tools for academic and industrial research',
-        'usecases.developers.title': 'Developers',
-        'usecases.developers.desc': 'Powerful automation for software development workflows',
-        'usecases.businesses.title': 'Businesses',
-        'usecases.businesses.desc': 'Enterprise solutions with privacy and compliance built-in',
-
-        // Testimonials Section
-        'testimonials.title': 'What People Say',
-        'testimonials.quote1': '"Movardis\'s approach to AI is refreshing — powerful yet respectful of privacy."',
-        'testimonials.quote2': '"Finally, AI tools that don\'t compromise on privacy or performance."',
-        'testimonials.quote3': '"The innovation coming from Movardis is exactly what the industry needs."',
-
-        // Contact Section
-        'contact.title': 'Get in Touch',
-        'contact.subtitle': 'Interested in our research or products? We\'d love to hear from you.',
-        'contact.form.name': 'Name',
         'contact.form.email': 'Email',
         'contact.form.message': 'Message',
         'contact.form.submit': 'Send Message',
@@ -225,22 +202,26 @@ const translations = {
 
         // Use Cases Section
         'usecases.title': 'Chi Serviamo',
-        'usecases.researchers.title': 'Ricercatori',
-        'usecases.researchers.desc': 'Strumenti AI avanzati per ricerca accademica e industriale',
-        'usecases.developers.title': 'Sviluppatori',
-        'usecases.developers.desc': 'Automazione potente per workflow di sviluppo software',
-        'usecases.businesses.title': 'Aziende',
-        'usecases.businesses.desc': 'Soluzioni enterprise con privacy e conformità integrate',
+        'usecases.researchers.title': 'Aziende',
+        'usecases.researchers.desc': 'Indagine e strategia per l\'adozione dell\'IA su scala',
+        'usecases.developers.title': 'Workplace Ibrido',
+        'usecases.developers.desc': 'Integrazione della collaborazione Uomo-IA nei flussi di lavoro',
+        'usecases.businesses.title': 'Lab Innovazione',
+        'usecases.businesses.desc': 'Test di tecnologie all\'avanguardia e progetti pilota',
 
         // Testimonials Section
-        'testimonials.title': 'Cosa Dicono',
-        'testimonials.quote1': '"L\'approccio di Movardis all\'AI è rinfrescante — potente ma rispettoso della privacy."',
-        'testimonials.quote2': '"Finalmente strumenti AI che non compromettono privacy o prestazioni."',
-        'testimonials.quote3': '"L\'innovazione che viene da Movardis è esattamente ciò di cui l\'industria ha bisogno."',
+        'testimonials.title': 'Dicono di Noi',
+        'testimonials.quote1': '"L\'elaborazione locale mantiene i nostri dati al sicuro usando funzioni AI avanzate. Esattamente ciò che serviva."',
+        'testimonials.quote2': '"Movardis ci ha aiutato a definire una roadmap chiara e pratica per integrare l\'IA nel nostro team di design."',
+        'testimonials.quote3': '"Strumenti semplici ed efficaci che funzionano senza la solita complessità enterprise."',
 
         // Contact Section
         'contact.title': 'Contattaci',
         'contact.subtitle': 'Interessato alla nostra ricerca o prodotti? Ci piacerebbe sentirti.',
+        'contact.support.title': 'Supporto',
+        'contact.support.desc': 'Aiuto & Problemi Tecnici',
+        'contact.business.title': 'Business',
+        'contact.business.desc': 'Partnership & Richieste',
         'contact.form.name': 'Nome',
         'contact.form.email': 'Email',
         'contact.form.message': 'Messaggio',
@@ -373,29 +354,16 @@ const translations = {
         'product.cta.button': 'Descargar Zap Studio',
 
         // Use Cases Section
-        'usecases.title': 'A Quién Servimos',
-        'usecases.researchers.title': 'Investigadores',
-        'usecases.researchers.desc': 'Herramientas de IA avanzadas para investigación académica e industrial',
-        'usecases.developers.title': 'Desarrolladores',
-        'usecases.developers.desc': 'Automatización potente para flujos de trabajo de desarrollo de software',
-        'usecases.businesses.title': 'Empresas',
-        'usecases.businesses.desc': 'Soluciones empresariales con privacidad y cumplimiento integrados',
+        'usecases.title': 'A Chi Ci Rivolgiamo',
+        'usecases.researchers.title': 'Aziende',
+        'usecases.researchers.desc': 'Indagine e strategia per l\'adozione dell\'IA su scala',
+        'usecases.developers.title': 'Workplace Ibrido',
+        'usecases.developers.desc': 'Integrazione della collaborazione Uomo-IA nei flussi di lavoro',
+        'usecases.businesses.title': 'Lab Innovazione',
+        'usecases.businesses.desc': 'Test di tecnologie all\'avanguardia e progetti pilota',
 
         // Testimonials Section
-        'testimonials.title': 'Lo Que Dicen',
-        'testimonials.quote1': '"El enfoque de Movardis hacia la IA es refrescante — potente pero respetuoso de la privacidad."',
-        'testimonials.quote2': '"Finalmente, herramientas de IA que no comprometen la privacidad ni el rendimiento."',
-        'testimonials.quote3': '"La innovación que viene de Movardis es exactamente lo que la industria necesita."',
-
-        // Contact Section
-        'contact.title': 'Ponte en Contacto',
-        'contact.subtitle': '¿Interesado en nuestra investigación o productos? Nos encantaría saber de ti.',
-        'contact.form.name': 'Nombre',
-        'contact.form.email': 'Email',
-        'contact.form.message': 'Mensaje',
-        'contact.form.submit': 'Enviar Mensaje',
-        'contact.info.email.title': 'Email',
-        'contact.info.languages.title': 'Idiomas',
+        'testimonials.title': 'Dicono di Noi',
         'contact.info.languages.list': 'Inglés, Italiano, Español, Francés',
         'contact.info.location.title': 'Ubicación',
         'contact.info.location.text': 'Italia',
@@ -525,23 +493,27 @@ const translations = {
         'product.cta.button': 'Télécharger Zap Studio',
 
         // Use Cases Section
-        'usecases.title': 'Qui Nous Servons',
-        'usecases.researchers.title': 'Chercheurs',
-        'usecases.researchers.desc': 'Outils IA avancés pour la recherche académique et industrielle',
-        'usecases.developers.title': 'Développeurs',
-        'usecases.developers.desc': 'Automatisation puissante pour les flux de travail de développement logiciel',
-        'usecases.businesses.title': 'Entreprises',
-        'usecases.businesses.desc': 'Solutions d\'entreprise avec confidentialité et conformité intégrées',
+        'usecases.title': 'A Qui Nous Servons',
+        'usecases.researchers.title': 'Entreprises',
+        'usecases.researchers.desc': 'Enquête et stratégie pour l\'adoption de l\'IA à l\'échelle',
+        'usecases.developers.title': 'Lieux de Travail Hybrides',
+        'usecases.developers.desc': 'Intégration de la collaboration Humain-IA dans les flux quotidiens',
+        'usecases.businesses.title': 'Labos d\'Innovation',
+        'usecases.businesses.desc': 'Test de technologies de pointe et pilotes',
 
         // Testimonials Section
-        'testimonials.title': 'Ce Qu\'On Dit',
-        'testimonials.quote1': '"L\'approche de Movardis envers l\'IA est rafraîchissante — puissante mais respectueuse de la vie privée."',
-        'testimonials.quote2': '"Enfin, des outils IA qui ne compromettent ni la vie privée ni les performances."',
-        'testimonials.quote3': '"L\'innovation venant de Movardis est exactement ce dont l\'industrie a besoin."',
+        'testimonials.title': 'Retours Communauté',
+        'testimonials.quote1': '"Le traitement local garde nos données sécurisées tout en utilisant des fonctions IA avancées. Exactement ce qu\'il fallait."',
+        'testimonials.quote2': '"Movardis nous a aidés à définir une feuille de route claire et pratique pour intégrer l\'IA dans notre équipe design."',
+        'testimonials.quote3': '"Des outils simples et efficaces qui fonctionnent sans la complexité entreprise habituelle."',
 
         // Contact Section
         'contact.title': 'Entrer en Contact',
         'contact.subtitle': 'Intéressé par notre recherche ou nos produits ? Nous aimerions avoir de vos nouvelles.',
+        'contact.support.title': 'Support',
+        'contact.support.desc': 'Aide & Problèmes Techniques',
+        'contact.business.title': 'Business',
+        'contact.business.desc': 'Partenariats & Demandes',
         'contact.form.name': 'Nom',
         'contact.form.email': 'Email',
         'contact.form.message': 'Message',
