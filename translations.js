@@ -67,6 +67,33 @@ const translations = {
         'product.features.feature4.desc': 'Intervene on every generated frame or phrase',
         'product.features.feature5.title': 'Privacy & Local',
         'product.features.feature5.desc': 'Your data and scripts stay on your PC',
+        'product.cta.title': 'Get Started',
+        'product.cta.desc': 'Download free, buy a license when you\'re ready.',
+        'product.cta.button': 'Download Zap Studio',
+
+        // Use Cases Section
+        'usecases.title': 'Our Expertise',
+        'usecases.researchers.title': 'Enterprises',
+        'usecases.researchers.desc': 'Investigation and strategy for AI adoption at scale',
+        'usecases.developers.title': 'Hybrid Workplaces',
+        'usecases.developers.desc': 'Integrating AI-Human collaboration in daily workflows',
+        'usecases.businesses.title': 'Innovation Labs',
+        'usecases.businesses.desc': 'Testing state-of-the-art technologies and pilots',
+
+        // Testimonials Section
+        'testimonials.title': 'Community Feedback',
+        'testimonials.quote1': '"The local processing keeps our data safe while using advanced AI features directly on our hardware."',
+        'testimonials.quote2': '"Movardis helped us strategy and define a clear roadmap for integrating AI into our existing workflows."',
+        'testimonials.quote3': '"Simple, effective tools that respect privacy without the usual enterprise bloat."',
+
+        // Contact Section
+        'contact.title': 'Get in Touch',
+        'contact.subtitle': 'Interested in our research or products? We\'d love to hear from you.',
+        'contact.support.title': 'Support',
+        'contact.support.desc': 'Help & Technical Issues',
+        'contact.business.title': 'Business',
+        'contact.business.desc': 'Partnerships & Inquiries',
+        'contact.form.name': 'Name',
         'contact.form.email': 'Email',
         'contact.form.message': 'Message',
         'contact.form.submit': 'Send Message',
