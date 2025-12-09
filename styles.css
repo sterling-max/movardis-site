@@ -198,7 +198,10 @@ section {
     justify-content: center;
     gap: 0.125rem;
     /* Minimal gap */
+    /* Minimal gap */
     line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
